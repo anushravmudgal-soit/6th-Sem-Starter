@@ -2,24 +2,50 @@
 ### Team ID: [e.g., Group-05]
 
 ## 🏢 Corporate Simulation Guidelines
-**Approved by:** Prof. Anushrav Mudgal
+**Approved by:** Mr.Anushrav Mudgal  
 **Objective:** To develop a production-grade software solution using industry-standard DevOps and Agile methodologies.
 
 ---
 
-## 👥 The Team
+## 👥 The Team & Responsibilities
+
 | Role | Name | GitHub Username | Primary Responsibility |
 | :--- | :--- | :--- | :--- |
-| **Team Lead** | [Name] | [@user] | Architecture & Merge Approvals |
-| **Developer** | [Name] | [@user] | Backend / API |
-| **Developer** | [Name] | [@user] | Frontend / UI |
-| **Developer** | [Name] | [@user] | Database & Testing |
-| **DevOps** | [Name] | [@user] | CI/CD & Documentation |
+| **Scrum Master / Lead** | [Name] | [@user] | Agile Process, Board Health & Approvals |
+| **Backend Developer** | [Name] | [@user] | API Logic, Security & Server Ops |
+| **Backend Developer** | [Name] | [@user] | API Logic, Database Integration |
+| **Frontend Developer** | [Name] | [@user] | UI/UX, State Management & API Consumption |
+| **Frontend Developer** | [Name] | [@user] | UI/UX, Client-side Validation |
+| **DB & QA Specialist** | [Name] | [@user] | Schema Design, Testing & Documentation |
+
+### 🛠 Role Descriptions
+
+#### **1. Scrum Master / Team Lead**
+* **Agile Management:** Owns the GitHub Project Board. Every task must have an owner and a priority.
+* **Sprint Planning:** Leads bi-weekly meetings in Discord to move tasks from `Backlog` to `Todo`.
+* **Blocker Removal:** Monitors `#attendance-logs` to identify and resolve team bottlenecks.
+* **Merge Authority:** Performs final quality checks on all Pull Requests (PRs) before merging to `main`.
+
+#### **2. Backend Developers**
+* **Core Logic:** Building RESTful APIs and server-side business logic.
+* **Data Security:** Implementing JWT/Session Auth and preventing SQL Injections.
+* **Optimization:** Ensuring fast database queries and clean API responses.
+
+#### **3. Frontend Developers**
+* **UI/UX Implementation:** Translating requirements into responsive HTML/CSS/JS components.
+* **Integration:** Connecting the frontend to backend APIs using `Fetch` or `Axios`.
+* **Usability:** Ensuring the application is intuitive and bug-free on the client side.
+
+#### **4. Database & QA Specialist**
+* **Data Architecture:** Designing the ER Diagram and maintaining the SQL/NoSQL schema.
+* **Quality Assurance:** Manually testing all features on the `dev` branch to identify bugs.
+* **Technical Writing:** Managing the `/docs` folder (SRS, System Design, Test Reports).
 
 ---
 
 ## 🚀 WEEK 1: MANDATORY SETUP CHECKLIST
-*All teams must complete these steps by the end of Week 1 to receive project approval.*
+*Must be completed by the end of Week 1.*
+
 
 ### 1. Initialize Agile Project Board
 1. Go to the **Projects** tab of this repository.
@@ -32,6 +58,8 @@
 1. **Change Nickname:** Set your nickname in the Discord server to `Real Name | Role`.
 2. **First Stand-up:** Post your first update in `#attendance-logs` (format: Yesterday/Today/Blockers).
 3. **Team Hub:** All technical decisions must be recorded in your private `#team-chat` channel.
+---
+
 
 ### 3. Submission of Synopsis
 Upload your initial Project Synopsis PDF to the `/docs` folder for approval by the Professor.
@@ -86,7 +114,12 @@ Grading is based on your **Digital Footprint** in this repository and Discord.
 
 ---
 
+
+
 ## 💻 Technical Setup
 1. Clone the repo: `git clone [URL]`
 2. Install dependencies: `[Command]`
 3. Run the App: `[Command]`
+
+
+
