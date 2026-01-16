@@ -18,59 +18,75 @@
 
 ---
 
-## 🛠 Project Management (The "Top View")
-We use **GitHub Projects** for task tracking.
-* **The Golden Rule:** *If a task is not on the Board, it does not exist.*
-* **Columns:**
-    1.  **Backlog:** All intended features.
-    2.  **Todo:** Tasks selected for the current sprint.
-    3.  **In Progress:** Currently being coded.
-    4.  **In Review:** PR is open and waiting for peer review.
-    5.  **Done:** Merged into `main` and tested.
+## 🚀 WEEK 1: MANDATORY SETUP CHECKLIST
+*All teams must complete these steps by the end of Week 1 to receive project approval.*
+
+### 1. Initialize Agile Project Board
+1. Go to the **Projects** tab of this repository.
+2. Click **"New project"** -> Select the **"Templates"** tab.
+3. Choose the **"6th-Sem-Starter"** template from the Organization list.
+4. Link this repository to that project so Issues appear automatically.
+5. Populate the **Backlog** with at least 10 initial tasks (Modules, Database Design, Research).
+
+### 2. Discord Sync & Identity
+1. **Change Nickname:** Set your nickname in the Discord server to `Real Name | Role`.
+2. **First Stand-up:** Post your first update in `#attendance-logs` (format: Yesterday/Today/Blockers).
+3. **Team Hub:** All technical decisions must be recorded in your private `#team-chat` channel.
+
+### 3. Submission of Synopsis
+Upload your initial Project Synopsis PDF to the `/docs` folder for approval by the Professor.
 
 ---
 
-## ⚙️ Development Workflow (Git Flow)
+## 🛠 Project Management (Agile)
+We use **GitHub Projects** for task tracking.
+* **The Golden Rule:** *If a task is not on the Board, it does not exist.*
+* **Priority Tags:** Use `🔴 High`, `🟡 Medium`, and `🟢 Low` to categorize your tasks.
+* **Categories:** Label every task as `Backend`, `Frontend`, `Database`, `Docs`, or `Bug`.
+
+---
+
+## ⚙️ Development Workflow (Git Flow & CI/CD)
 We strictly follow **Branch Protection Rules**. Direct pushes to `main` are **FORBIDDEN**.
 
 ### 1. Branching Strategy
 * `main`: Production-ready code. (Protected: No direct commits).
-* `dev`: Integration branch. All features merge here first.
 * `feature/feature-name`: Working branch for a specific task.
-    * *Example:* `feature/login-page`, `fix/database-connection`
+    * *Example:* `feature/login-validation`, `fix/navbar-css`
 
-### 2. The Cycle
-1.  **Pull** latest changes: `git pull origin main`
-2.  **Create** a branch: `git checkout -b feature/my-new-feature`
-3.  **Code** & Commit: `git commit -m "Added login validation logic"`
-4.  **Push**: `git push origin feature/my-new-feature`
-5.  **Open Pull Request (PR):**
-    * Go to GitHub.
-    * Open PR from `feature/...` to `main` (or `dev`).
-    * **Review Requirement:** At least 1 other team member MUST review the code and approve it.
-    * **Faculty Review:** Tag @[Your-GitHub-Username] for major architectural changes.
+### 2. CI/CD (The Quality Gate) 🤖
+Every push to a branch triggers an **Automated Syntax Checker (GitHub Action)**.
+* **Yellow Circle 🟡:** Robot is checking your code.
+* **Red X ❌:** Syntax error found. **DO NOT OPEN A PR** until this is fixed.
+* **Green Check ✅:** Code is clean and ready for Peer Review.
+
+### 3. The Development Cycle
+1. **Pull** latest changes: `git pull origin main`
+2. **Create** a branch: `git checkout -b feature/my-task`
+3. **Code** & Push: `git push origin feature/my-task`
+4. **Open Pull Request (PR):**
+    * Tag a teammate as a **Reviewer**.
+    * Mention the specific **Project Board Task** the PR resolves.
+    * **Review Requirement:** At least 1 teammate must approve the code before it can be merged.
 
 ---
 
 ## 📝 Coding Standards
-* **Commits:** Must be descriptive.
-    * ❌ Bad: "Fixed stuff"
-    * ✅ Good: "Refactored UserAuthService to handle JWT tokens"
-* **Formatting:** Code must be indented and commented.
-* **Cleanliness:** No commented-out dead code. No hardcoded passwords/API keys (Use `.env` files).
+* **Commits:** Must be descriptive (e.g., `✅ Added JWT authentication middleware`).
+* **Clean Code:** No hardcoded passwords/API keys. Use `.env` files.
+* **Documentation:** All functions must have basic comments explaining their purpose.
 
 ---
 
 ## 📊 Evaluation & Attendance
-Grading is based on **Digital Footprint** in this repository.
-1.  **Contributions:** The "Insights -> Contributors" graph will be used to verify individual effort.
-2.  **Consistency:** Regular commits are required. Dumping code 1 day before the deadline results in a penalty.
-3.  **Collaboration:** Evidence of Code Reviews (comments on PRs) counts towards the "Teamwork" grade.
+Grading is based on your **Digital Footprint** in this repository and Discord.
+1. **GitHub Insights:** Contribution graphs will verify individual coding effort.
+2. **Project Board Velocity:** We will check if tasks are being moved daily or dumped last minute.
+3. **Discord Presence:** Active participation in team voice channels and daily stand-ups is mandatory.
 
 ---
 
-## 🚀 Setup Instructions
-1.  Clone the repo.
-2.  Run `[command to install dependencies]` (e.g., `npm install` or `mvn clean install`).
-3.  Configure `.env` file (see `.env.example`).
-4.  Run the application: `[command to run app]`.
+## 💻 Technical Setup
+1. Clone the repo: `git clone [URL]`
+2. Install dependencies: `[Command]`
+3. Run the App: `[Command]`
